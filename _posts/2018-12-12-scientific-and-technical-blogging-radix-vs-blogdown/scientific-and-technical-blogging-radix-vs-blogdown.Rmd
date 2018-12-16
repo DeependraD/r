@@ -185,7 +185,7 @@ So `radix` or `blogdown`? This is ultimately up to you. One thing I'm sure is th
 
 ## {.appendix}
 
-*This article is an accompaniment of the Software Corner of the [Biometric Bulletin](https://www.biometricsociety.org/publications/biometricbulletin/) (to appear). You can see the `blogdown` remix of this blog [here]().*
+*This article is an accompaniment of the Software Corner of the [Biometric Bulletin](https://www.biometricsociety.org/publications/biometricbulletin/) (to appear). You can see the `blogdown` remix of this blog [here](https://emitanaka.rbind.io/post/scientific-and-technical-blogging-radix-vs-blogdown-remix/).*
 
 ## Acknowledgments {.appendix}
 

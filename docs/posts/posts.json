@@ -12,21 +12,6 @@
     "date": "2018-12-15",
     "categories": [],
     "preview": "posts/2018-12-12-scientific-and-technical-blogging-radix-vs-blogdown/radix-preview.png",
-    "last_modified": "2018-12-17T10:01:16+11:00"
-  },
-  {
-    "path": "posts/welcome/",
-    "title": "Welcome to Statisitcal Genetics",
-    "description": "Welcome to our new blog, Statisitcal Genetics. We hope you enjoy \nreading what we have to say!",
-    "author": [
-      {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
-      }
-    ],
-    "date": "2018-12-12",
-    "categories": [],
-    "preview": {},
-    "last_modified": "2018-12-12T16:54:54+11:00"
+    "last_modified": "2018-12-17T10:46:56+11:00"
   }
 ]
