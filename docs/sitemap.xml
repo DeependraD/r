@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
+  <url>
+    <loc>https://emitanaka.github.io/r/about.html</loc>
+    <lastmod>2018-12-16T10:07:52+11:00</lastmod>
+  </url>
+  <url>
+    <loc>https://emitanaka.github.io/r/</loc>
+    <lastmod>2018-12-16T09:49:28+11:00</lastmod>
+  </url>
+  <url>
+    <loc>https://emitanaka.github.io/r/posts/2018-12-12-scientific-and-technical-blogging-radix-vs-blogdown/</loc>
+    <lastmod>2018-12-17T10:46:56+11:00</lastmod>
+  </url>
+</urlset>
