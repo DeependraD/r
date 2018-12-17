@@ -79,6 +79,15 @@
     url = {https://rmarkdown.rstudio.com},
 }
 
+@Book{wickham2016,
+    author = {Hadley Wickham},
+    title = {ggplot2: Elegant Graphics for Data Analysis},
+    publisher = {Springer-Verlag New York},
+    year = {2016},
+    isbn = {978-3-319-24277-4},
+    url = {http://ggplot2.org},
+}
+
 @Book{xie2018,
     title = {R Markdown: The Definitive Guide},
     author = {Yihui Xie and J.J. Allaire and Garrett Grolemund},

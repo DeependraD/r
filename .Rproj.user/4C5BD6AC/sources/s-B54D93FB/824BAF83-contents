@@ -189,7 +189,7 @@ So `radix` or `blogdown`? This is ultimately up to you. One thing I'm sure is th
 
 ## Acknowledgments {.appendix}
 
-This article is written using `radix`[@allaire2018] using [RStudio IDE](https://www.rstudio.com/) and statistical computing tool [R](https://www.r-project.org/)[@R2018]. The charts are generated using `DiagrammeR`[@iannone2018].
+This article is written using `radix`<sup>[@allaire2018]</sup> using [RStudio IDE](https://www.rstudio.com/) and statistical computing tool [R](https://www.r-project.org/)[@R2018]. The charts are generated using `DiagrammeR`[@iannone2018] and the graph using `ggplot2`<sup>[@wickham2016]</sup>.
 
 ## Reuse {.appendix}
 

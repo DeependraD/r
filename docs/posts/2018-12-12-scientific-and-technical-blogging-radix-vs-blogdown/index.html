@@ -66,6 +66,7 @@
   <meta name="citation_reference" content="citation_title=Distill;citation_publication_date=2016;citation_publisher=Distill Working Group;citation_doi=10.23915/distill;citation_author=Shan Carter;citation_author=Chirs Olah;citation_author=Arvind Satyanarayan" />
   <meta name="citation_reference" content="citation_title=DiagrammeR: Graph/network visualization;citation_publication_date=2018;citation_author=Richard Iannone" />
   <meta name="citation_reference" content="citation_title=Rmarkdown: Dynamic documents for r;citation_publication_date=2018;citation_author=JJ Allaire;citation_author=Yihui Xie;citation_author=Jonathan McPherson;citation_author=Javier Luraschi;citation_author=Kevin Ushey;citation_author=Aron Atkins;citation_author=Hadley Wickham;citation_author=Joe Cheng;citation_author=Winston Chang;citation_author=Richard Iannone" />
+  <meta name="citation_reference" content="citation_title=Ggplot2: Elegant graphics for data analysis;citation_publication_date=2016;citation_publisher=Springer-Verlag New York;citation_author=Hadley Wickham" />
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
@@ -4970,8 +4971,8 @@ Some technical details in this article may be wrong due to my lack of understand
 <center>
 <div class="layout-chunk" data-layout="l-screen-inset">
 <div class="figure"><span id="fig:radix"></span>
-<div id="htmlwidget-3744a797081caf91f8f3" style="width:624px;height:768px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3744a797081caf91f8f3">{"x":{"diagram":"\ngraph TD;\n    radix(radix)-->.Rmd(.Rmd);\n    .Rmd-->rmarkdown(rmarkdown);\n    rmarkdown-->Distill(Distill Web Framework);\n    Distill-->Pandoc(Pandoc);\n    Pandoc-->.html(.html);\n    style .Rmd fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style .html fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style Distill fill:#fff,stroke:#333,stroke-width:2px;\n    style Pandoc fill:#f9f,stroke:#333,stroke-width:2px;\n    style radix fill:#f9f,stroke:#333,stroke-width:2px;\n    style rmarkdown fill:#f9f,stroke:#333,stroke-width:2px;\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-217004e51c35407bbd1a" style="width:624px;height:768px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-217004e51c35407bbd1a">{"x":{"diagram":"\ngraph TD;\n    radix(radix)-->.Rmd(.Rmd);\n    .Rmd-->rmarkdown(rmarkdown);\n    rmarkdown-->Distill(Distill Web Framework);\n    Distill-->Pandoc(Pandoc);\n    Pandoc-->.html(.html);\n    style .Rmd fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style .html fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style Distill fill:#fff,stroke:#333,stroke-width:2px;\n    style Pandoc fill:#f9f,stroke:#333,stroke-width:2px;\n    style radix fill:#f9f,stroke:#333,stroke-width:2px;\n    style rmarkdown fill:#f9f,stroke:#333,stroke-width:2px;\n"},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 2: Radix Framework in a Chart
 </p>
@@ -4983,8 +4984,8 @@ Figure 2: Radix Framework in a Chart
 <center>
 <div class="layout-chunk" data-layout="l-screen-inset">
 <div class="figure"><span id="fig:blogdown"></span>
-<div id="htmlwidget-480ddf7df7b597f2ec5a" style="width:624px;height:768px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-480ddf7df7b597f2ec5a">{"x":{"diagram":"\ngraph TD;\n    blogdown(blogdown)-->.Rmd(.Rmd);\n    blogdown-->.Rmarkdown(.Rmarkdown);\n    blogdown-->.md(.md);\n    .md-->BF(Blackfriday);\n    .Rmarkdown-->.markdown(.markdown);\n    .markdown-->BF;\n    .Rmd-->htmlpage(blogdown::html_page);\n    htmlpage-->htmldoc(bookdown::html_document2);\n    htmldoc-->rmd(rmarkdown::output_format);\n    rmd-->Pandoc(Pandoc);\n    Pandoc-->.html(.html);\n    BF-->Hugo(Hugo);\n    .html-->Hugo;\n    Hugo-->web(Stitch Website);\n    web-->deploy(Deploy Website);\n    style blogdown fill:#f9f,stroke:#333,stroke-width:4px;\n    style Pandoc fill:#f9f,stroke:#333,stroke-width:4px;\n    style Hugo fill:#f9f,stroke:#333,stroke-width:4px;\n    style BF fill:#f9f,stroke:#333,stroke-width:4px;\n    style .md fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style .Rmarkdown fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style .markdown fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style .html fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style .Rmd fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style htmlpage fill:#fff,stroke:#333,stroke-width:2px;\n    style htmldoc fill:#fff,stroke:#333,stroke-width:2px;\n    style rmd fill:#fff,stroke:#333,stroke-width:2px;\n    style web fill:#fff,stroke:#333,stroke-width:2px;\n    style deploy fill:#fff,stroke:#333,stroke-width:2px;\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8f4787a16eded53cbb9f" style="width:624px;height:768px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8f4787a16eded53cbb9f">{"x":{"diagram":"\ngraph TD;\n    blogdown(blogdown)-->.Rmd(.Rmd);\n    blogdown-->.Rmarkdown(.Rmarkdown);\n    blogdown-->.md(.md);\n    .md-->BF(Blackfriday);\n    .Rmarkdown-->.markdown(.markdown);\n    .markdown-->BF;\n    .Rmd-->htmlpage(blogdown::html_page);\n    htmlpage-->htmldoc(bookdown::html_document2);\n    htmldoc-->rmd(rmarkdown::output_format);\n    rmd-->Pandoc(Pandoc);\n    Pandoc-->.html(.html);\n    BF-->Hugo(Hugo);\n    .html-->Hugo;\n    Hugo-->web(Stitch Website);\n    web-->deploy(Deploy Website);\n    style blogdown fill:#f9f,stroke:#333,stroke-width:4px;\n    style Pandoc fill:#f9f,stroke:#333,stroke-width:4px;\n    style Hugo fill:#f9f,stroke:#333,stroke-width:4px;\n    style BF fill:#f9f,stroke:#333,stroke-width:4px;\n    style .md fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style .Rmarkdown fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style .markdown fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style .html fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style .Rmd fill:#41b5f4,stroke:#333,stroke-width:2px;\n    style htmlpage fill:#fff,stroke:#333,stroke-width:2px;\n    style htmldoc fill:#fff,stroke:#333,stroke-width:2px;\n    style rmd fill:#fff,stroke:#333,stroke-width:2px;\n    style web fill:#fff,stroke:#333,stroke-width:2px;\n    style deploy fill:#fff,stroke:#333,stroke-width:2px;\n"},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 3: <code>blogdown</code> Hugo Framework in a Chart. Note that <code>blogdown</code> can use other generators such as Jekyll and Hexo in place of Hugo.
 </p>
@@ -4999,7 +5000,7 @@ Figure 3: <code>blogdown</code> Hugo Framework in a Chart. Note that <code>blogd
 <h2 id="section" class="appendix"></h2>
 <p><em>This article is an accompaniment of the Software Corner of the <a href="https://www.biometricsociety.org/publications/biometricbulletin/">Biometric Bulletin</a> (to appear). You can see the <code>blogdown</code> remix of this blog <a href="https://emitanaka.rbind.io/post/scientific-and-technical-blogging-radix-vs-blogdown-remix/">here</a>.</em></p>
 <h2 id="acknowledgments" class="appendix">Acknowledgments</h2>
-<p>This article is written using <code>radix</code><span class="citation" data-cites="allaire2018">(J. Allaire, Iannone, and Xie <a href="#ref-allaire2018">2018</a>)</span> using <a href="https://www.rstudio.com/">RStudio IDE</a> and statistical computing tool <a href="https://www.r-project.org/">R</a><span class="citation" data-cites="R2018">(<em>R: A Language and Environment for Statistical Computing</em> <a href="#ref-R2018">2018</a>)</span>. The charts are generated using <code>DiagrammeR</code><span class="citation" data-cites="iannone2018">(Iannone <a href="#ref-iannone2018">2018</a>)</span>.</p>
+<p>This article is written using <code>radix</code><sup><span class="citation" data-cites="allaire2018">(J. Allaire, Iannone, and Xie <a href="#ref-allaire2018">2018</a>)</span></sup> using <a href="https://www.rstudio.com/">RStudio IDE</a> and statistical computing tool <a href="https://www.r-project.org/">R</a><span class="citation" data-cites="R2018">(<em>R: A Language and Environment for Statistical Computing</em> <a href="#ref-R2018">2018</a>)</span>. The charts are generated using <code>DiagrammeR</code><span class="citation" data-cites="iannone2018">(Iannone <a href="#ref-iannone2018">2018</a>)</span> and the graph using <code>ggplot2</code><sup><span class="citation" data-cites="wickham2016">(Wickham <a href="#ref-wickham2016">2016</a>)</span></sup>.</p>
 <h2 id="reuse" class="appendix">Reuse</h2>
 <p>Text and figures are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution CC BY 4.0</a>. Source code is available at <a href="https://github.com/emitanaka/r/_posts" class="uri">https://github.com/emitanaka/r/_posts</a>.</p>
 <h2 id="corrections" class="appendix">Corrections</h2>
@@ -5022,6 +5023,9 @@ Figure 3: <code>blogdown</code> Hugo Framework in a Chart. Note that <code>blogd
 </div>
 <div id="ref-R2018">
 <p><em>R: A Language and Environment for Statistical Computing</em>. 2018. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.</p>
+</div>
+<div id="ref-wickham2016">
+<p>Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="http://ggplot2.org">http://ggplot2.org</a>.</p>
 </div>
 <div id="ref-xie2018">
 <p>Xie, Yihui, J.J. Allaire, and Garrett Grolemund. 2018. <em>R Markdown: The Definitive Guide</em>. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/rmarkdown">https://bookdown.org/yihui/rmarkdown</a>.</p>
@@ -5165,6 +5169,15 @@ var disqus_config = function () {
     year = {2018},
     note = {R package version 1.11},
     url = {https://rmarkdown.rstudio.com},
+}
+
+@Book{wickham2016,
+    author = {Hadley Wickham},
+    title = {ggplot2: Elegant Graphics for Data Analysis},
+    publisher = {Springer-Verlag New York},
+    year = {2016},
+    isbn = {978-3-319-24277-4},
+    url = {http://ggplot2.org},
 }
 
 @Book{xie2018,

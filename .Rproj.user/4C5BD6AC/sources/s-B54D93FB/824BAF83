@@ -5,16 +5,16 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2330625356",
+    "hash" : "0",
     "id" : "824BAF83",
-    "lastKnownWriteTime" : 1545004012,
-    "last_content_update" : 1545004012710,
+    "lastKnownWriteTime" : 1545005767,
+    "last_content_update" : 1545005767205,
     "path" : "~/Dropbox (Personal)/Website/radix/_posts/2018-12-12-scientific-and-technical-blogging-radix-vs-blogdown/scientific-and-technical-blogging-radix-vs-blogdown.Rmd",
     "project_path" : "_posts/2018-12-12-scientific-and-technical-blogging-radix-vs-blogdown/scientific-and-technical-blogging-radix-vs-blogdown.Rmd",
     "properties" : {
-        "cursorPosition" : "187,307",
+        "cursorPosition" : "191,293",
         "last_setup_crc32" : "B54D93FB3b3fc7e6",
-        "scrollLine" : "187"
+        "scrollLine" : "188"
     },
     "read_only" : false,
     "read_only_alternatives" : [
