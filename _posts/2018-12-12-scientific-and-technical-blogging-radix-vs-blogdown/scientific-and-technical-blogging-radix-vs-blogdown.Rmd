@@ -21,7 +21,6 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 library(DiagrammeR)
 library(tidyverse)
-library(plotly)
 ```
 
 
@@ -35,7 +34,7 @@ The line where a blog constitutes to be a scientific or technical blog is not cl
 
 Another benefit to blogging is that the author has control of the writing style. Scientific or technical articles usually call for formality while blogging is free from such obligation and allow the author to relax to his/her own style of writing. I particularly like authors that display a blend of humour or personal thoughts and experience that makes reading their blogs entertaining for me.
 
-There is of course a downside to allowing *anyone* to blog in *any* style they like. Quality control. It is not hard for some people to make outrangeous scientific claims without any evidence. This of course doesn't stop happening even with a rigorous scientific process (e.g. the [well known case of the fradulent paper alluding that the vaccine causes autism](https://en.wikipedia.org/wiki/MMR_vaccine_controversy)). This is more of a lesson perhaps that it is important that each individuals train themselves with critical thinking.
+There is of course a downside to allowing *anyone* to blog in *any* style they like. Quality control. It is not hard for some people to make outrageous scientific claims without any evidence. This of course doesn't stop happening even with a rigorous scientific process (e.g. the [well known case of the fradulent paper alluding that the vaccine causes autism](https://en.wikipedia.org/wiki/MMR_vaccine_controversy)). This is more of a lesson perhaps that it is important that each individuals train themselves with critical thinking.
 
 
 ##  Why R Markdown?
@@ -44,7 +43,7 @@ R Markdown, described briefly, allows you to use a simple syntax to seamlessly e
 
 R Markdown documents consist of all codes with the ability to easily hide the code (contained in the so-called chunks) for the desired output. The simplicity yet flexibility to customise makes R Markdown a powerful tool that makes it easy for users to adopt reproducible research and literate programming<sup>[@knuth1984]</sup>.
 
-R Markdown is written by the team of software enginners in RStudio<sup>[@allaire2018b]</sup> who have shown commitment to open source projects and work in a company that appears to have a viable business model. These two points as well as large community usage (shown by the increasing popularity in Figure \@ref(fig:rmarkdowntrend)) give some assurance to me that there will be a long term commitment to maintaining the R Markdown based R packages.
+R Markdown is written by the team of software engineers in RStudio<sup>[@allaire2018b]</sup> who have shown commitment to open source projects and work in a company that appears to have a viable business model. These two points as well as large community usage (shown by the increasing popularity in Figure \@ref(fig:rmarkdowntrend)) give some assurance to me that there will be a long term commitment to maintaining the R Markdown based R packages.
 
 ```{r rmarkdowntrend, layout="l-page-outset", fig.width=10, fig.height=3.5, fig.cap="The data is taken for a 5 year period 2013-12-22 to 2018-12-16 from google trends on search for term \"rmarkdown\". Interest represent worldwide search interest relative to the highest point on the chart over the 5 year period. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term. The upward trend in the graph implies that R Markdown is gaining popularity."}
 trend <- read_csv("googletrend.csv", skip=2,

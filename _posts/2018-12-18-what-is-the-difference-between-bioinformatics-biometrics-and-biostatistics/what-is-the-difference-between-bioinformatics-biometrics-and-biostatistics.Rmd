@@ -1,0 +1,160 @@
+---
+title: "What's in a name? The difference between Bioinformatics, Biometrics and Biostatistics"
+description: |
+  Doing analytics in the life sciences? What's your identity label?
+author:
+  - name: Emi Tanaka
+    url: https://github.com/emitanaka
+date: 12-18-2018
+slug: tanaka2018biox
+bibliography: biblio.bib  
+output:
+  radix::radix_article:
+    self_contained: true
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<blockquote>
+What's in a name? That which we call a rose
+By any other word would smell as sweet
+<footer>— William Shakespeare, Romeo and Juliet</footer>
+</blockquote>
+
+
+Bioinformatics, biometrics and biostatistics - it all sounds similar yet each area has their nuances. What divides one field from the other can be unclear even to the people within the field. Perhaps that is not surprising - the difference can be subtle and the meaning of a word evolves over time^[Unsurprisingly, that is why the Oxford English Dictionary (OED) is updated on a quarterly basis.]. It is also not hard for people to switch their labels, e.g. a bioinformatician may call themselves biostatistican and vice versa. I imagine the lack of permanence is confusing, in particular, to those outside the field.
+
+Besides the objective definition of the area, people may associate certain characteristics due to the general makeup of the people within the field. For example, statistics may be thought as old-fashioned as opposed to data science although such characteristic is more to do with confounding of the composition of people (e.g. you will not find many retirement age data scientists) and not an objective definition of the area. 
+
+
+#### So what's in a name?
+
+A name, label or a title can form a preconceived idea about you as a scientist. Perhaps if you call yourself a statistician and if people don't know you any better then they'll assume that you're old fashioned, but call yourself a data scientist, and they'll assume you're savvy. Unfortunately, not everyone has a time to know you well so superficiality becomes abound and people will box you into their own categories from what little they know about you.
+
+#### Shed the old and come up with a new name?
+
+You may come up with a new name that may distinguish yourself from the rest and rid of any preconceived idea the community may hold but I feel new words should come out of necessity. *If existing words suffice then it shows respect to build upon that rather than restart anew*. As an example, data scientist arose out of what many see it as a need for a statistician that is also good computationally (or vice versa)^[Exact definition of a data scientist is debated.]. Trends start somewhere but you should question if you are displaying a level of arrogance to think you are the trend-setter before setting off to a trajectory of inventing new names.
+
+So in the field of analytics for life sciences, Bioinformatics, Biometrics and Biostatistics are the well known broad terms. We have a look at the definition of each term from [Google Dictionary](https://en.wikipedia.org/wiki/Google_Dictionary). All of these terms have a journal with the same name so we also have a look at what these journals are about. 
+
+## Bioinformatics
+
+The following definition is taken from [Google Dictionary](https://www.google.com.au/search?ei=8ycbXO6IF8GgwAOb26co&q=define+bioinformatics&oq=define+bioinformatics&gs_l=psy-ab.3..35i39l2j0i67l8.8802444.8803644..8803844...0.0..0.298.1834.2-7......0....1j2..gws-wiz.......0i71j0i131.RuYs3WXtcKQ) with their dictionary content licensed from Oxford University Press's [OxfordDictionaries.com](https://www.oxforddictionaries.com/):
+
+
+<blockquote>
+Bioinformatics is the science of collecting and analysing complex biological data such as genetic codes.
+</blockquote>
+
+We could also have a look at the journal *Bioinformatics* for how bioinformatics is defined. *Bioinformatics* (the journal) has been in circulation since 1985 and is an official journal of [International Society of Computational Biology](https://www.iscb.org/what-we-do) published by Oxford Academic Press. The [about page of Bioinformatics journal](https://academic.oup.com/bioinformatics/pages/About) describes it as
+
+<blockquote>
+(Bioinformatics) main focus is on new developments in genome bioinformatics and computational biology. ... biologically interesting discoveries using computational methods, ... exploring the applications used for experiments.
+</blockquote>
+
+There are other journals, such as *BMC Bioinformatics*, that can also be used to form an idea of this area, however, I do not expand upon these here. 
+
+Bioinformatics is often closely associated with **Computational Biology** or **Quantitative Biology**. The former association is made obvious with *Bioinformatics* being the journal of International Society of Computational Biology. The interdisciplinary nature of the field of bioinformatics often means that bioinformatics consist of people of various background. Certain culture, such as conference publications and fast reviewer process which are markedly different approach to traditional mathematical and statistical journals, suggest strong influence of computer science and biology.
+
+### Computational Biology
+
+The [*Journal of Computational Biology*](https://home.liebertpub.com/publications/journal-of-computational-biology/31/overview#aims), which is the official journal of the conference [RECOMB](https://www.recomb.org/home), lists the target audience of their journal as "Genomic specialists, cell biologists, developmental biologists, mathematics and systems science researchers, applied mathematics and computer scientists, among others". Interestingly, statistician is not explicitly listed here. 
+
+### Quantitative Biology
+
+The [*Quantitative Biology* journal](https://www.springer.com/life+sciences/systems+biology+and+bioinformatics/journal/40484) comprises of bioinformatics and computational biology however additionally focuses on systems and synthetic biology. This suggests that quantitative biology, while being interdisciplinary, may have more of a biological focus.
+
+## Biometrics
+
+The following definition is taken from [Google Dictionary](https://www.google.com.au/search?q=define+biometrics&oq=define+biometrics&aqs=chrome..69i57.2868j0j4&sourceid=chrome&ie=UTF-8) with their dictionary content licensed from Oxford University Press's [OxfordDictionaries.com](https://www.oxforddictionaries.com/):
+
+<blockquote>
+Biometrics is the the application of statistical analysis to biological data.
+</blockquote>
+
+The [International Biometrics Society](http://www.biometricsociety.org) includes a [definition in their website](https://www.biometricsociety.org/about/definition-of-biometrics/):
+
+<blockquote>
+The terms “Biometrics” and “Biometry” have been used since early in the 20th century to refer to the field of development of statistical and mathematical methods applicable to data analysis problems in the biological sciences. Statistical methods for the analysis of data from agricultural field experiments to compare the yields of different varieties of wheat, for the analysis of data from human clinical trials evaluating the relative effectiveness of competing therapies for disease, or for the analysis of data from environmental studies on the effects of air or water pollution on the appearance of human disease in a region or country are all examples of problems that would fall under the umbrella of “Biometrics” as the term has been historically used. 
+</blockquote>
+
+More recently, the term biometrics is referred to metrics of human characteristics. This use fundamentally differ from the historical meaning and International Biometrics Society specifically address this:
+
+<blockquote>
+Recently, the term “Biometrics” has also been used to refer to the emerging field of technology devoted to identification of individuals using biological traits, such as those based on retinal or iris scanning, fingerprints, or face recognition. Neither the journal “Biometrics” nor the International Biometric Society is engaged in research, marketing, or reporting related to this technology. Likewise, the editors and staff of the journal are not knowledgeable in this area.
+</blockquote>
+
+
+The journal, *Biometrics*, was originally published in 1945 under the title Biometrics Bulletin but modified to the shorter title Biometrics in 1947<sup>[@Biometrics1947]</sup>. The *Biometrics* journal is the official journal of [IBS](http://www.biometricsociety.org/about/) and is published by Wiley Online Library. The segments of the [about page of the Biometrics journal](https://onlinelibrary.wiley.com/page/journal/15410420/homepage/productinformation.html) is extracted below.
+
+
+<blockquote>
+Biometrics emphasizes the role of statistics and mathematics in the biosciences... to promote and extend the use of statistical and mathematical methods in the principal disciplines of biosciences by ... the development and application of these methods...
+</blockquote>
+
+
+Biometrics have a rich history dating back to [Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher)'s conception of modern day statistics. The *Biometrics* journal, while having emphasis on problems in the biological sciences, is strongly geared for statisticians. 
+
+<blockquote>
+Biometry, the active pursuit of biological knowledge by quantitative methods.
+<footer>— R.A. Fisher, 1948</footer>
+</blockquote>
+
+Much of Fisher's work was motivated by agriculture and perhaps rooted with this part of the history, a *biometrician* often references a person who is adept to apply statistical methods in the agricultural field. Although biometrics is not constraint to genetics alone, Fisher was an important figure in both statistics and genetics and so we make special mention of **quantitative genetics**. Quantitative geneticists, in particular, have a close association with biometrics with many adept in the application of statistical methods to the genetics field^[I have been referred to as quantitative geneticist once.].
+
+
+
+### Quantitative Genetics
+
+The [Biological Distance Analysis](https://www.sciencedirect.com/science/article/pii/B9780128019665000238) defines quantitative genetics as "the subdiscipline of evolutionary population genetics designed to model the (partial) inheritance and evolution of continuous phenotypic traits".
+
+## Biostatistics
+
+The following definition is taken from [Google Dictionary](https://www.google.com.au/search?ei=wZAdXMeNDYjmvgTS2L2YDw&q=define%3A+biostatistics&oq=define%3A+biostatistics&gs_l=psy-ab.3..35i39j0i10l9.8283311.8284861..8284999...0.0..0.501.3482.2-3j6j0j1......0....1..gws-wiz.......0j0i71.U0HgwC3FlBc) with their dictionary content licensed from Oxford University Press's [OxfordDictionaries.com](https://www.oxforddictionaries.com/):
+
+<blockquote>
+Biostatistics is the branch of statistics that deals with data relating to living organisms.
+</blockquote>
+
+The journal *Biostatistics*, like *Bioinformatics*, is published by Oxford Academic Press with the first issue appearing in the year 2000. Unlike *Bioinformatics* and *Biometrics*, *Biostatistics* is not a journal of a certain society. The *Biostatistics* journal [about page](https://academic.oup.com/biostatistics/pages/About) makes it clear the focus is in *human* health.
+
+<blockquote>
+... Biostatistics is to advance statistical science and its application to problems of human health and disease, with the ultimate goal of advancing the public's health.
+</blockquote>
+
+While I don't believe all biostatisticians work explicitly with human data, the aim of the *Biostatistics* strongly suggest that biostatistics have a heavy focus on human health. 
+
+
+## What am I?
+
+I majored in mathematics and statistics for the Bachelor of Science (Advanced Mathematics) at the University of Sydney, Australia. I like mathematics and appreciate the beauty and elegance in it. Nevertheless, I chose to do honours in statistics because I wanted to do something that people will find useful and, as much as mathematics is useful, the prospective of employment was higher in statistics and I understood, albeit shallowly, of what you did as a statistician but not much of what you did as a mathematician at that time. 
+
+In addition, I wanted to do something that was computational. I chose Dr. (now A/Prof) Uri Keich, who was a new staff member at the time and came from the Computer Science Department of Cornell University, to be my supervisor. My choice was certainly based on a superficiality that someone from a Computer Science Department will have computational projects. This was certainly the case but the biology part was unexpected. In fact out of the main science subjects (Chemistry, Physics and Biology), biology was the one I've opted not to do and I didn't touch biology since Year 10 that time. In the end, I was lucky to have picked up some biology then and had a good guidance from PhD supervisor who trained me with rigor. 
+
+
+My first programming was in my first year at uni. I took up software programming but I had a bad experience in group work (in which my group members did not show up majority of times and I carried the entirety of the weight of the group work) that I decided to choose a solitary path where group work was not mandated. That was mathematics and statistics. Ironically, the University wants to mandate group work and I incorporate group work into courses now. I wonder sometimes if past me would have chosen to do mathematics and statistics in the current environment. The present me though certainly know the positive side of team work. I've come to deeply appreciate the diversity in knowledge and experience that people have, especially in domains that they know better than me, and I am grateful for the generosity of the people who took their time to share their knowledge and experience with me. 
+
+My first entry to a job in statisitcs is when I started working as a research assistant at the NHMRC Clinical Trials Centre just before my honours year. There were many biostatisticians there and I picked up survival analysis in my honours year as I had a mind to go there. In the end I sticked doing a PhD. My PhD was in statistics with a focus in a particular area of bioinformatics. In my postdoc years, I worked in the biometrics area focussing particularly with plant improvement programs. So in my short career, I dipped into biostatistics, bioinformatics and then biometrics but I do not consider myself a biostatistician, bioinformatician nor biometrician. 
+
+My journey is one where I feel I set out to be a **statistician**, but what I was really gearing towards was to be more applied. Effectively, my pursuit was usually founded on methodology or tools that will be useful for others. I have considered myself as an **applied statistician** for many years now. When I became a lecturer (and thus gaining freedom to pursue what I like in research), I spent more effort in improving my computational and technical skills. Even though what I do these days is rooted more in computer science, I resist labelling myself as a **data scientist**. I might feel more comfortable referring myself as such in the future but I can't help but to think it feels like following a trend (given how popular being a data scientist is these days) and abandoning my roots. I am proud of my roots and hope rather I can encourage people to have positive association with statistics. 
+
+## What's your identity?
+
+In the end, a title is just a title, a name is just a name and a label is just a label. I personally care more about working with people whose principle and values are aligned with mine. To that end, I believe everyone should choose an identity that they are comfortable and happy with. I appreciate that some people have identities that are transient; some don't and some are still figuring it out. Regardless, it's good to reflect and think. 
+
+
+## Acknowledgments {.appendix}
+
+This article is written using `radix`<sup>[@allaire2018]</sup> using [RStudio IDE](https://www.rstudio.com/) and statistical computing tool [R](https://www.r-project.org/)[@R2018]. 
+
+## Reuse {.appendix}
+
+Text and figures are licensed under [Creative Commons Attribution CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Source code is available at https://github.com/emitanaka/r/_posts.
+
+
+## Corrections {.appendix}
+
+If you see mistakes or want to suggest changes, please create an [issue on the source repository](https://github.com/emitanaka/r/issues). The author citation for R<sup>[@R2018]</sup> is not a mistake but [waiting on a fix](https://github.com/distillpub/template/issues/93) for bibliography parsing in the Distill framework.

@@ -1,9 +1,0 @@
----
-title: "About this blog"
-description: |
-  The Savvy Statistics blog is on Statistics x Genetics x Computing written by [Emi Tanaka](https://emitanaka.github.io). 
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```

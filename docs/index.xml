@@ -7,7 +7,15 @@
     <description>Statisitcal Genetics
 </description>
     <generator>Radix</generator>
-    <lastBuildDate>Sat, 15 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>What's in a name? The difference between Bioinformatics, Biometrics and Biostatistics</title>
+      <dc:creator>Emi Tanaka</dc:creator>
+      <link>https://emitanaka.github.io/r/posts/2018-12-18-what-is-the-difference-between-bioinformatics-biometrics-and-biostatistics</link>
+      <description>Doing analytics in the life sciences? What's your identity label?</description>
+      <guid>https://emitanaka.github.io/r/posts/2018-12-18-what-is-the-difference-between-bioinformatics-biometrics-and-biostatistics</guid>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Scientific and Technical Blogging: Radix vs. Blogdown</title>
       <dc:creator>Emi Tanaka</dc:creator>
