@@ -1,0 +1,10 @@
+name: Publish Website
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/455935/ebed348b082f4636bb5daf086f20e5f6
+bundleId: https://api.rpubs.com/api/v1/document/455935/ebed348b082f4636bb5daf086f20e5f6
+url: http://rpubs.com/emitanaka/455935
+when: 1546665338.0942

@@ -1,0 +1,170 @@
+﻿Person,Gender,Group,Position
+"Aksamit, Anna",F,Applied Mathematics,Lecturer
+"Altmann, Eduardo",M,Applied Mathematics,Associate Professor
+"Cresswell, Clio",F,Applied Mathematics,Senior Lecturer
+"Dullin, Holger",M,Applied Mathematics,Professor
+"Goldys, Ben",M,Applied Mathematics,Professor
+"Gottwald, Georg",M,Applied Mathematics,Professor
+"Gubbiotti, Giorgio",M,Applied Mathematics,Research Associate
+"Joshi, Nalini",F,Applied Mathematics,Professor
+"Kim, Peter",M,Applied Mathematics,Associate Professor
+"Lizarraga, Ian",M,Applied Mathematics,Postdoctoral Fellow
+"Marangell, Robert",M,Applied Mathematics,Senior Lecturer
+"Myerscough, Mary",F,Applied Mathematics,Professor
+"Padden, Whayne",M,Applied Mathematics,Research Fellow
+"Radnović, Milena",F,Applied Mathematics,Senior Lecturer
+"Rose, Danya",M,Applied Mathematics,Postdoctoral Research Associate
+"Rutkowski, Marek",M,Applied Mathematics,Professor
+"Smith, Lachlan",M,Applied Mathematics,Postdoctoral Fellow
+"Stephen, Sharon",F,Applied Mathematics,Associate Professor
+"Tran, Dinh Thi",F,Applied Mathematics,Research Associate
+"Vasil, Geoff",M,Applied Mathematics,Senior Lecturer
+"Watson, Michael",M,Applied Mathematics,Postdoctoral Research Associate
+"Wechselberger, Martin",M,Applied Mathematics,Professor
+"Zhou, Zhou",M,Applied Mathematics,Lecturer
+"Coulembier, Kevin",M,Algebra,Senior Lecturer
+"Dancso, Zsuzsanna",F,Algebra,Senior Lecturer
+"Easdown, David",M,Algebra,Associate Professor
+"Ehrig, Michael",M,Algebra,Research Fellow
+"Gobet, Thomas",M,Algebra,Postdoctoral Research Associate
+"Lehrer, Gus",M,Algebra,Professor
+"Liu, Ming",M,Algebra,Postdoctoral Research Associate
+"Mathas, Andrew",M,Algebra,Professor
+"Molev, Alexander",M,Algebra,Professor
+"Nandakumar, Vinoth",M,Algebra,Research Fellow
+"Naqvi, Yusra",M,Algebra,Postdoctoral Fellow
+"Ramagge, Jacqui",F,Algebra,Professor and Head of School
+"Romanov, Anna",F,Algebra,NSF Postdoctoral Fellow
+"Thiel, Ulrich",M,Algebra,Research Fellow
+"Williamson, Geordie",M,Algebra,Professor
+"Yacobi, Oded",M,Algebra,Senior Lecturer
+"Zhang, Ruibin",M,Algebra,Professor
+"Bailey, Geoff",M,Computational Algebra,Research Fellow
+"Cannon, John",M,Computational Algebra,Professor
+"Steel, Allan",M,Computational Algebra,Senior Research Fellow
+"Sutherland, Nicole",F,Computational Algebra,Magma Software Engineer
+"Unger, Bill",M,Computational Algebra,Senior Research Associate
+"Watkins, Mark",M,Computational Algebra,Research Fellow
+"Carberry, Emma",F,"Geometry, Topology and Analysis",Senior Lecturer
+"Jiang, Wenshuai",M,"Geometry, Topology and Analysis",ARC Early Career Researcher
+"Lishak, Boris",M,"Geometry, Topology and Analysis",Postdoctoral Research Associate
+"Paunescu, Laurentiu",M,"Geometry, Topology and Analysis",Professor
+"Spreer, Jonathan",M,"Geometry, Topology and Analysis",Academic Fellow
+"Taji, Behrouz",M,"Geometry, Topology and Analysis",Lecturer
+"Thomas, Anne",F,"Geometry, Topology and Analysis",Senior Lecturer
+"Tillmann, Stephan",M,"Geometry, Topology and Analysis",Associate Professor
+"Wu, Haotian",M,"Geometry, Topology and Analysis",ARC Early Career Researcher
+"Xu, Guangbo",M,"Geometry, Topology and Analysis",ARC Early Career Researcher
+"Zhang, Zhou",M,"Geometry, Topology and Analysis",Associate Professor
+"Afsar, Zahra",M,Operator Algebras and Ergodic Theory,Postdoctoral Fellow
+"Badziahin, Dmitry",M,Operator Algebras and Ergodic Theory,Associate Professor
+"Brownlowe, Nathan",M,Operator Algebras and Ergodic Theory,Academic Fellow
+"Fish, Alexander",M,Operator Algebras and Ergodic Theory,Senior Lecturer
+"Azizi, Lamiae",F,Statistics,Senior Lecturer
+"Chan, Jennifer",F,Statistics,Associate Professor
+"Cripps, Sally",F,Statistics,Professor
+"Hiabu, Munir",M,Statistics,Lecturer
+"Kawai, Ray",M,Statistics,Senior Lecturer
+"Keich, Uri",M,Statistics,Associate Professor
+"Müller, Samuel",M,Statistics,Professor
+"Ormerod, John",M,Statistics,Associate Professor
+"Patrick, Ellis",M,Statistics,Academic Fellow
+"Peiris, Shelton",F,Statistics,Associate Professor
+"Stewart, Michael",M,Statistics,Senior Lecturer
+"Tanaka, Emi",F,Statistics,Lecturer
+"Tarr, Garth",M,Statistics,Lecturer
+"Wang, Qiying",M,Statistics,Professor
+"Wang, Rachel",F,Statistics,Lecturer
+"Warren, Diana",F,Statistics,Academic Fellow
+"Yang, Pengyi",M,Statistics,Senior Lecturer
+"Yang, Jean",F,Statistics,Professor
+"Alrashdi, Huda",M,Applied Mathematics,Student
+"Armstrong, Becky",F,Operator Algebras and Ergodic Theory,Student
+"Badre, Carol",F,Algebra,Student
+"Baine, Joseph",M,Algebra,Student
+"Burrull Naredo, Gaston",M,Algebra,Student
+"Bywaters, Timothy",M,Algebra,Student
+"Cao, Yue",M,Statistics,Student
+"Carnaffan, Sean",M,Statistics,Student
+"Cartwright, Madeleine",F,Applied Mathematics,Student
+"Cassell, Matthew",M,Applied Mathematics,Student
+"Cheung, Anthony",M,Applied Mathematics,Student
+"Ciappara, Joshua",M,Algebra,Student
+"Collier, Timothy",M,Nonlinear Analysis,Student
+"Curran, Mitchell",M,Applied Mathematics,Student
+"Dawson, Sean",M,Applied Mathematics,Student
+"Deshpande, Vinita",F,Statistics,Student
+"Dong, Jiamin",M,Applied Mathematics,Student
+"Duignan, Nathan",M,Applied Mathematics,Student
+"Eade, Jonathan",M,Applied Mathematics,Student
+"Emery, Kristen",M,Statistics,Student
+"Farmer, David",M,Applied Mathematics,Student
+"Ford, Hugh",M,Applied Mathematics,Student
+"Gardiner, Sean",M,Algebra,Student
+"Gibson, Joel",M,Algebra,Student
+"Giggins, Brent",M,Applied Mathematics,Student
+"Greenaway, Mark",M,Statistics,Student
+"Haidar, Zeina",F,Applied Mathematics,Student
+"He, Yue",M,Statistics,Student
+"Hester, Eric",M,Applied Mathematics,Student
+"Holden, Sidney",M,Applied Mathematics,Student
+"Hunt, Richard",M,Statistics,Student
+"Ikhimwin, Bernard",M,Applied Mathematics,Student
+"Issa, Zacharia",M,Nonlinear Analysis,Student
+"James, Nicholas",M,Statistics,Student
+"Jelbart, Samuel",M,Applied Mathematics,Student
+"Jenner, Adrianne",F,Applied Mathematics,Student
+"Jiao, Chunxi",F,Statistics,Student
+"Jin, Chunlei",M,Statistics,Student
+"Kerschl, Alexander",M,Algebra,Student
+"Kim, Taiyun",M,Statistics,Student
+"Kim, Jieun Hani",F,Statistics,Student
+"Kim, Edward",M,Applied Mathematics,Student
+"Klinger, Lucy",F,Applied Mathematics,Student
+"Kumbhari, Adarsh",M,Applied Mathematics,Student
+"Laubie, Steve",M,Applied Mathematics (Intern),Student
+"Li, Mengbo",F,Statistics,Student
+"Lin, Yingxin",F,Statistics,Student
+"Loo, Sara",F,Applied Mathematics,Student
+"Loughland, Isabella",F,Applied Mathematics,Student
+"Lyu, Mengfan",M,Algebra,Student
+"Moon, Jack",M,"Geometry, Topology and Analysis",Student
+"Morgenstern, Tal",M,Applied Mathematics,Student
+"Murphy, Jessica",F,Operator Algebras and Ergodic Theory,Student
+"Nguyen, Diana Minh Huyen",F,Applied Mathematics,Student
+"Osaka, Haruki",M,Statistics,Student
+"Papadopoulos, George",M,Mathematics Education,Student
+"Perrin, Mark",M,"Geometry, Topology and Analysis",Student
+"Pooladvand, Pantea",F,Applied Mathematics,Student
+"Qiu, Qinjing",M,Statistics,Student
+"Roberts, Timothy",M,Applied Mathematics,Student
+"Romanes, Sarah",F,Statistics,Student
+"Smith, Connor",M,Statistics,Student
+"Song, Chenxiao",M,Statistics,Student
+"Tate, Dominic",M,"Geometry, Topology and Analysis",Student
+"Tidswell, Jonathon",M,Statistics,Student
+"Tiplea, Camelia",F,Applied Mathematics,Student
+"Townsend, Kane",M,Algebra,Student
+"Uddin, Ishraq",M,Applied Mathematics,Student
+"Wang, Andy",M,Statistics,Student
+"Wang, Kevin",M,Statistics,Student
+"Wiggins, Giulian",M,Algebra,Student
+"Woodard, Zoe",M,Applied Mathematics,Student
+"Wormell, Caroline",F,Applied Mathematics,Student
+"Wu, Helen",F,Statistics,Student
+"Xu, Xiangnan",M,Statistics,Student
+"Yang, James Ting Feng",M,Applied Mathematics,Student
+"Yau, Yeeka",M,"Geometry, Topology and Analysis",Student
+"Yu, Weichang",M,Statistics,Student
+"Yuan, Huimin Cindy",F,Statistics,Student
+"Yue, Wenqi",F,Applied Mathematics,Student
+"Zeaiter, Zeaiter",M,Applied Mathematics,Student
+"Zhang, Yang",M,Algebra,Student
+"Zheng, Collin",M,Applied Mathematics,Student
+"Henderson, Anthony",M,Algebra,Professor
+"Kwong, Kwok-Kun",M,"Geometry, Topology and Analysis",Lecturer
+"Parkinson, James",M,Algebra,Senior Lecturer
+"Cîrstea, Florica-Corina",F,Nonlinear Analysis,Associate Professor
+"Daners, Daniel",M,Nonlinear Analysis,Associate Professor
+"Hauer, Daniel",M,Nonlinear Analysis,Academic Fellow
+"Tzou, Leo",M,Nonlinear Analysis,Senior Lecturer

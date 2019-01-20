@@ -345,3 +345,40 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 ]0;~/Dropbox (Personal)/Website/radix
 [38;5;135memi [0mat [38;5;166mEmis-MacBook-Pro [0min [38;5;118m~/Dropbox (Personal)/Website/radix
 [0m$ git add . 
+]0;~/Dropbox (Personal)/Website/radix
+[38;5;135memi [0mat [38;5;166mEmis-MacBook-Pro [0min [38;5;118m~/Dropbox (Personal)/Website/radix
+[0m$ git commti[K[Kit -m " bu[K[K[Kbuild website dum dum"
+[master 59f107d] build website dum dum
+ Committer: Emi Tanaka <emi@192-168-1-22.tpgi.com.au>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 66 insertions(+), 11 deletions(-)
+ rename docs/{Users/emi/Dropbox (Personal)/Website/radix/_posts => posts}/2018-12-18-what-is-the-difference-between-bioinformatics-biometrics-and-biostatistics/biblio.bib (100%)
+ rename docs/{Users/emi/Dropbox (Personal)/Website/radix/_posts => posts}/2018-12-18-what-is-the-difference-between-bioinformatics-biometrics-and-biostatistics/index.html (99%)
+]0;~/Dropbox (Personal)/Website/radix
+[38;5;135memi [0mat [38;5;166mEmis-MacBook-Pro [0min [38;5;118m~/Dropbox (Personal)/Website/radix
+[0m$ git push -u origin master
+Counting objects: 12, done.
+Delta compression using up to 8 threads.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   8% (1/12)   Writing objects:  16% (2/12)   Writing objects:  25% (3/12)   Writing objects:  33% (4/12)   Writing objects:  41% (5/12)   Writing objects:  50% (6/12)   Writing objects:  58% (7/12)   Writing objects:  66% (8/12)   Writing objects:  75% (9/12)   Writing objects:  83% (10/12)   Writing objects:  91% (11/12)   Writing objects: 100% (12/12)   Writing objects: 100% (12/12), 127.08 KiB | 9.08 MiB/s, done.
+Total 12 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/4)   [Kremote: Resolving deltas:  25% (1/4)   [Kremote: Resolving deltas:  50% (2/4)   [Kremote: Resolving deltas:  75% (3/4)   [Kremote: Resolving deltas: 100% (4/4)   [Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
+To https://github.com/emitanaka/r.git
+   edf64a7..59f107d  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;~/Dropbox (Personal)/Website/radix
+[38;5;135memi [0mat [38;5;166mEmis-MacBook-Pro [0min [38;5;118m~/Dropbox (Personal)/Website/radix
+[0m$ ]0;~/Dropbox (Personal)/Website/radix[?1034h
+[38;5;135memi [0mat [38;5;166mEmis-MacBook-Pro [0min [38;5;118m~/Dropbox (Personal)/Website/radix
+[K[0m$ git add . 

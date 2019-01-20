@@ -197,4 +197,4 @@ Text and figures are licensed under [Creative Commons Attribution CC BY 4.0](htt
 
 ## Corrections {.appendix}
 
-If you see mistakes or want to suggest changes, please create an [issue on the source repository](https://github.com/emitanaka/r/issues). The author citation for R<sup>[@R2018]</sup> is not a mistake but [waiting on a fix](https://github.com/distillpub/template/issues/93) for bibliography parsing in the Distill framework.
+If you see mistakes or want to suggest changes, please create an [issue on the source repository](https://github.com/emitanaka/r/issues). 
