@@ -1,7 +1,7 @@
 ---
 title: "The Gender Balance in Mathematical Sciences: A Case Study"
 description: |
-  Exploratory analysis of gender proportion in School of Mathematics and Statisitcs at The University of Sydney.
+  Exploratory analysis of gender proportion in School of Mathematics and Statistics at The University of Sydney.
 author:
   - name: Emi Tanaka
     url: https://github.com/emitanaka
@@ -66,21 +66,40 @@ all_df <- school_df %>%
     TRUE ~ "Staff"
   ))
 
+staff_df <- all_df %>% filter(Position!="Student") %>% 
+  mutate(Status=case_when(
+    Position=="Lecturer" ~ "Level B",
+    Position=="Senior Lecturer" ~ "Level C",
+    Position=="Associate Professor" ~ "Level D",
+    Position=="Professor" ~ "Level E",
+    Position=="Senior Research Fellow" ~ "Level C",
+    Position=="Senior Research Associate" ~ "Level C",
+    Position=="Research Associate" ~ "Level A",
+    Position=="Research Fellow" ~ "Level B",
+    Position=="Professor and Head of School" ~ "Level E",
+    Position=="Academic Fellow" ~ "Level B",
+    Position=="Magma Software Engineer" ~ "Level B",
+    Position=="ARC Early Career Researcher" ~ "Level B",
+    Position=="NSF Postdoctoral Fellow" ~ "Level A",
+    Position=="Postdoctoral Fellow" ~ "Level A",
+    Position=="Postdoctoral Research Associate" ~ "Level A",
+    TRUE ~ "Other"
+  ))
 ```
 
 Diversity and inclusion plays an important role in science and also for the wider community. [An extensive analysis of 600 decisions by 200 business teams by Forbes](https://www.forbes.com/sites/eriklarson/2017/09/21/new-research-diversity-inclusion-better-decision-making-at-work/#454e61c64cbf) suggests that a more diverse and inclusive team makes better decisions. Presumably this is because the team would take into account different perspectives. 
 
 There are many different types of diversity (ethnic background, age, gender, training background etc) but today the topic at hand is _gender diversity_. There are now rising movements now to support the minority gender such as the [R-Ladies](https://rladies.org/), [Forwards](https://forwards.github.io/) and [MAGIC Workshops](http://wp.maths.usyd.edu.au/MAGIC/). Some institutions have advertised for female only positions as a way to tackle gender diversity in male-dominated faculties. These movements were at times met with criticisms. Some also believe that certain gender are inherently prone to entering (or not entering) certain fields and devalue any active intervention.
 
-With historical bias where female were often removed from further study and held to certain expectations and minority gender were often suppressed, it is hard to tell what the natural equillibrium for the gender proportion should be in many fields. Many would agree though that the female or non-binary representation for students and staff in the mathematical and statistical discipline are low. The aim of this article is to examine _how low_ this is by examining  the data from School of Mathematics and Statistics, The University of Sydney.
+With historical bias where female were often removed from further study and held to certain expectations and minority gender were often suppressed, it is hard to tell what the natural equilibrium for the gender proportion should be in many fields. Many would agree though that the female or non-binary representation for students and staff in the mathematical and statistical discipline are low. The aim of this article is to examine _how low_ this is by examining  the data from School of Mathematics and Statistics, The University of Sydney.
 
 ## Data 
 
-The data for the number of honours and HDR graduates in the School of Mathematics and Statisitcs at The University of Sydney are sourced from [here](http://www.maths.usyd.edu.au/u/SMS/HonoursMF.html) and [here](http://www.maths.usyd.edu.au/u/SMS/HdrMF.html), respectively.  
+The data for the number of honours and HDR graduates in the School of Mathematics and Statistics at The University of Sydney are sourced from [here](http://www.maths.usyd.edu.au/u/SMS/HonoursMF.html) and [here](http://www.maths.usyd.edu.au/u/SMS/HdrMF.html), respectively.  
 
 The number of current staff and students are complied from the public list [here](http://www.maths.usyd.edu.au/ut/people.html) with removal of certain personnel that are no longer at the School or do not occupy an office within the Carslaw building (with one exception) and gender identification from my personal knowledge as a member of staff. I have tried to the best of my knowledge infer the research group and appointment level but there is likely some mistake. Any mistake in the collection of this data are of my own.
 
-Note: gender is prescribed here as what binary gender (male or female) the person likely identify with or inferred from their names or faces if I don't personnally have the information at hand. 
+Note: gender is prescribed here as what binary gender (male or female) the person likely identify with or inferred from their names or faces if I don't personally have the information at hand. 
 
 ## Exploratory Analysis 
 
@@ -110,7 +129,7 @@ g1 + g2 + plot_layout(ncol = 1)
 
 ### Higher Degree Research (HDR) Student Graduates
 
-```{r hdr, fig.cap="Above graphs show the count (A) and proportions (B) of HRD student graduates from School of Mathematics and Statistics at The University of Sydney by the three major research groups.", fig.height=10}
+```{r hdr, fig.cap="Above graphs show the count (A) and proportions (B) of HDR student graduates from School of Mathematics and Statistics at The University of Sydney by the three major research groups.", fig.height=10}
 hdrdf <- HDR_df %>% 
   gather("GroupGender", "Count", -Year) %>% 
   mutate(Group=case_when(
@@ -141,31 +160,11 @@ with(all_df, print(ctable(Status, Group, prop = 'n'), method = 'render', omit.he
 </center>
 
 ```{r current, fig.cap="This barplot shows the number of staff or current HDR student for each gender by the three major research groups."}
-all_df %>% ggplot(aes(Gender, fill=Gender)) + geom_bar(position="dodge") + facet_grid(Group ~ Status)
+all_df %>% ggplot(aes(Gender, fill=Gender)) + geom_bar(position="dodge") + facet_grid(Group ~ Status) + guides(fill=F) + labs(y="Count")
 
 ```
 ```{r level, fig.cap="This barplot shows the number of staff in each gender by their appointment level. Note B=Lecturer or Assistant Professor in the US system; C=Senior Lecturer; D=Associate Professor and E=Professor."}
-staff_df <- all_df %>% filter(Position!="Student") %>% 
-  mutate(Status=case_when(
-    Position=="Lecturer" ~ "Level B",
-    Position=="Senior Lecturer" ~ "Level C",
-    Position=="Associate Professor" ~ "Level D",
-    Position=="Professor" ~ "Level E",
-    Position=="Senior Research Fellow" ~ "Level C",
-    Position=="Senior Research Associate" ~ "Level C",
-    Position=="Research Associate" ~ "Level A",
-    Position=="Research Fellow" ~ "Level B",
-    Position=="Professor and Head of School" ~ "Level E",
-    Position=="Academic Fellow" ~ "Level B",
-    Position=="Magma Software Engineer" ~ "Level B",
-    Position=="ARC Early Career Researcher" ~ "Level B",
-    Position=="NSF Postdoctoral Fellow" ~ "Level A",
-    Position=="Postdoctoral Fellow" ~ "Level A",
-    Position=="Postdoctoral Research Associate" ~ "Level A",
-    TRUE ~ "Other"
-  ))
-
-staff_df %>% ggplot(aes(Gender, fill=Gender)) + geom_bar(position="dodge") + facet_grid(Group ~ Status)
+staff_df %>% ggplot(aes(Gender, fill=Gender)) + geom_bar(position="dodge") + facet_grid(Group ~ Status) + guides(fill=F) + labs(y="Count")
 ```
 
 
