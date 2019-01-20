@@ -10,6 +10,8 @@ date: 01-20-2019
 bibliography: biblio.bib  
 output:
   radix::radix_article:
+    toc: true
+    toc_depth: 3
     self_contained: true
 ---
 
@@ -132,9 +134,11 @@ g1 + g2 + plot_layout(ncol = 1)
 
 There are currently `r nrow(all_df) - nrow(staff_df)` HDR students and `r nrow(staff_df)` faculty staffs. The division of these by the three major research groups are shown below.
 
+<center>
 ```{r}
 with(all_df, print(ctable(Status, Group, prop = 'n'), method = 'render', omit.headings = TRUE))
 ```
+</center>
 
 ```{r current, fig.cap="This barplot shows the number of staff or current HDR student for each gender by the three major research groups."}
 all_df %>% ggplot(aes(Gender, fill=Gender)) + geom_bar(position="dodge") + facet_grid(Group ~ Status)

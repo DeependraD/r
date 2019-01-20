@@ -382,3 +382,74 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 [0m$ ]0;~/Dropbox (Personal)/Website/radix[?1034h
 [38;5;135memi [0mat [38;5;166mEmis-MacBook-Pro [0min [38;5;118m~/Dropbox (Personal)/Website/radix
 [K[0m$ git add . 
+]0;~/Dropbox (Personal)/Website/radix
+[38;5;135memi [0mat [38;5;166mEmis-MacBook-Pro [0min [38;5;118m~/Dropbox (Personal)/Website/radix
+[0m$ git commit -m "gender study"[K[K[K[K[K[Kcase study"
+[master 8694f1e] gender case study
+ Committer: Emi Tanaka <emi@Emis-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 50 files changed, 9998 insertions(+), 9 deletions(-)
+ rewrite .Rproj.user/4C5BD6AC/console06/INDEX001 (86%)
+ create mode 100644 _posts/2018-12-18-what-is-the-difference-between-bioinformatics-biometrics-and-biostatistics/rsconnect/documents/what-is-the-difference-between-bioinformatics-biometrics-and-biostatistics.Rmd/rpubs.com/rpubs/Publish Website.dcf
+ create mode 100644 _posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/HDR.csv
+ create mode 100644 _posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/biblio.bib
+ create mode 100644 _posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/honours.csv
+ create mode 100644 _posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/radix-preview.png
+ create mode 100644 _posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/school_data_by_group.csv
+ create mode 100644 _posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/staff_data.csv
+ create mode 100644 _posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study.Rmd
+ create mode 100644 _posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study.html
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2018-12-18-what-is-the-difference-between-bioinformatics-biometrics-and-biostatistics/biblio.bib
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2018-12-18-what-is-the-difference-between-bioinformatics-biometrics-and-biostatistics/index.html
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/HDR.csv
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/biblio.bib
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/honours.csv
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/index.html
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/radix-preview.png
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/school_data_by_group.csv
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/staff_data.csv
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study_files/bowser-1.9.3/bowser.min.js
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study_files/distill-2.2.21/template.v2.js
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study_files/figure-html5/current-1.png
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study_files/figure-html5/hdr-1.png
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study_files/figure-html5/honour-1.png
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study_files/figure-html5/level-1.png
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study_files/figure-html5/unnamed-chunk-1-1.png
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study_files/figure-html5/unnamed-chunk-2-1.png
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study_files/jquery-1.11.3/jquery.min.js
+ create mode 100644 docs/Users/emi/Dropbox (Personal)/Website/radix/_posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/the-gender-balance-in-mathematical-sciences-a-case-study_files/webcomponents-2.0.0/webcomponents.js
+ create mode 100644 docs/x/_site.yml
+ create mode 100644 docs/x/about.Rmd
+ create mode 100644 docs/x/index.Rmd
+ create mode 100644 docs/x/x.Rproj
+ create mode 100644 rsconnect/documents/index.Rmd/rpubs.com/rpubs/Publish Website.dcf
+ create mode 100644 x/_site.yml
+ create mode 100644 x/about.Rmd
+ create mode 100644 x/index.Rmd
+ create mode 100644 x/x.Rproj
+]0;~/Dropbox (Personal)/Website/radix
+[38;5;135memi [0mat [38;5;166mEmis-MacBook-Pro [0min [38;5;118m~/Dropbox (Personal)/Website/radix
+[0m$ git push -u origin master
+Counting objects: 71, done.
+Delta compression using up to 8 threads.
+Compressing objects:   1% (1/54)   Compressing objects:   3% (2/54)   Compressing objects:   5% (3/54)   Compressing objects:   7% (4/54)   Compressing objects:   9% (5/54)   Compressing objects:  11% (6/54)   Compressing objects:  12% (7/54)   Compressing objects:  14% (8/54)   Compressing objects:  16% (9/54)   Compressing objects:  18% (10/54)   Compressing objects:  20% (11/54)   Compressing objects:  22% (12/54)   Compressing objects:  24% (13/54)   Compressing objects:  25% (14/54)   Compressing objects:  27% (15/54)   Compressing objects:  29% (16/54)   Compressing objects:  31% (17/54)   Compressing objects:  33% (18/54)   Compressing objects:  35% (19/54)   Compressing objects:  37% (20/54)   Compressing objects:  38% (21/54)   Compressing objects:  40% (22/54)   Compressing objects:  42% (23/54)   Compressing objects:  44% (24/54)   Compressing objects:  46% (25/54)   Compressing objects:  48% (26/54)   Compressing objects:  50% (27/54)   Compressing objects:  51% (28/54)   Compressing objects:  53% (29/54)   Compressing objects:  55% (30/54)   Compressing objects:  57% (31/54)   Compressing objects:  59% (32/54)   Compressing objects:  61% (33/54)   Compressing objects:  62% (34/54)   Compressing objects:  64% (35/54)   Compressing objects:  66% (36/54)   Compressing objects:  68% (37/54)   Compressing objects:  70% (38/54)   Compressing objects:  72% (39/54)   Compressing objects:  74% (40/54)   Compressing objects:  75% (41/54)   Compressing objects:  77% (42/54)   Compressing objects:  79% (43/54)   Compressing objects:  81% (44/54)   Compressing objects:  83% (45/54)   Compressing objects:  85% (46/54)   Compressing objects:  87% (47/54)   Compressing objects:  88% (48/54)   Compressing objects:  90% (49/54)   Compressing objects:  92% (50/54)   Compressing objects:  94% (51/54)   Compressing objects:  96% (52/54)   Compressing objects:  98% (53/54)   Compressing objects: 100% (54/54)   Compressing objects: 100% (54/54), done.
+Writing objects:   1% (1/71)   Writing objects:   2% (2/71)   Writing objects:   4% (3/71)   Writing objects:   5% (4/71)   Writing objects:   7% (5/71)   Writing objects:   8% (6/71)   Writing objects:   9% (7/71)   Writing objects:  11% (8/71)   Writing objects:  12% (9/71)   Writing objects:  14% (10/71)   Writing objects:  15% (11/71)   Writing objects:  16% (12/71)   Writing objects:  18% (13/71)   Writing objects:  19% (14/71)   Writing objects:  21% (15/71)   Writing objects:  22% (16/71)   Writing objects:  23% (17/71)   Writing objects:  25% (18/71)   Writing objects:  26% (19/71)   Writing objects:  28% (20/71)   Writing objects:  29% (21/71)   Writing objects:  30% (22/71)   Writing objects:  32% (23/71)   Writing objects:  33% (24/71)   Writing objects:  35% (25/71)   Writing objects:  36% (26/71)   Writing objects:  38% (27/71)   Writing objects:  39% (28/71)   Writing objects:  40% (29/71)   Writing objects:  43% (31/71)   Writing objects:  45% (32/71)   Writing objects:  46% (33/71)   Writing objects:  47% (34/71)   Writing objects:  49% (35/71)   Writing objects:  50% (36/71)   Writing objects:  52% (37/71)   Writing objects:  53% (38/71)   Writing objects:  54% (39/71)   Writing objects:  56% (40/71)   Writing objects:  57% (41/71)   Writing objects:  59% (42/71)   Writing objects:  60% (43/71)   Writing objects:  61% (44/71)   Writing objects:  63% (45/71)   Writing objects:  64% (46/71)   Writing objects:  66% (47/71)   Writing objects:  67% (48/71)   Writing objects:  70% (50/71)   Writing objects:  71% (51/71)   Writing objects:  73% (52/71)   Writing objects:  74% (53/71)   Writing objects:  76% (54/71)   Writing objects:  77% (55/71)   Writing objects:  78% (56/71)   Writing objects:  80% (57/71)   Writing objects:  81% (58/71)   Writing objects:  83% (59/71)   Writing objects:  84% (60/71)   Writing objects:  85% (61/71)   Writing objects:  87% (62/71)   Writing objects:  88% (63/71)   Writing objects:  90% (64/71)   Writing objects:  91% (65/71)   Writing objects:  92% (66/71)   Writing objects:  94% (67/71)   Writing objects:  95% (68/71)   Writing objects:  97% (69/71)   Writing objects:  98% (70/71)   Writing objects: 100% (71/71)   Writing objects: 100% (71/71), 930.46 KiB | 6.24 MiB/s, done.
+Total 71 (delta 21), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/21)   [Kremote: Resolving deltas:   4% (1/21)   [Kremote: Resolving deltas:   9% (2/21)   [Kremote: Resolving deltas:  19% (4/21)   [Kremote: Resolving deltas:  23% (5/21)   [Kremote: Resolving deltas:  28% (6/21)   [Kremote: Resolving deltas:  33% (7/21)   [Kremote: Resolving deltas:  38% (8/21)   [Kremote: Resolving deltas:  42% (9/21)   [Kremote: Resolving deltas:  47% (10/21)   [Kremote: Resolving deltas:  52% (11/21)   [Kremote: Resolving deltas:  57% (12/21)   [Kremote: Resolving deltas:  61% (13/21)   [Kremote: Resolving deltas:  66% (14/21)   [Kremote: Resolving deltas:  71% (15/21)   [Kremote: Resolving deltas:  76% (16/21)   [Kremote: Resolving deltas:  80% (17/21)   [Kremote: Resolving deltas:  85% (18/21)   [Kremote: Resolving deltas:  90% (19/21)   [Kremote: Resolving deltas:  95% (20/21)   [Kremote: Resolving deltas: 100% (21/21)   [Kremote: Resolving deltas: 100% (21/21), completed with 17 local objects.[K
+To https://github.com/emitanaka/r.git
+   59f107d..8694f1e  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;~/Dropbox (Personal)/Website/radix
+[38;5;135memi [0mat [38;5;166mEmis-MacBook-Pro [0min [38;5;118m~/Dropbox (Personal)/Website/radix
+[0m$ [K[0m$ git add . 
