@@ -1,0 +1,94 @@
+---
+title: "Symbolic formulae for linear mixed models"
+description: |
+  The R Consortium Project
+author:
+  - name: Emi Tanaka
+    url: https://github.com/emitanaka
+date: 03-07-2019
+slug: symboliclmm
+bibliography: biblio.bib  
+output:
+  radix::radix_article:
+    self_contained: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The project is in colloboration with Dr. Francis Hui (ANU) and Dr. Max Kuhn (RStudio).
+
+## The Problem
+
+Symbolic model formulae define the structural component of a statistical model in an easier and often more accessible terms for practitioners. The earlier instance of symbolic model formulae for linear models was applied in Genstat with further generalisation by @Wilkinson1973. @Chambers1993 describe the symbolic model formulae implementation for linear models in the `S` language which remains much the same in the `R` language [@Venables2018].
+
+Linear mixed models (LMMs) are widely used across many disciplines (e.g. ecology, psychology, agriculture, finance etc) due to its flexibility to model complex, correlated structures in the data. With over 10,000 citations and 5.3 million total downloads on CRAN, `lme4` [@Bates2015] is arguably the most popular R-package to fit LMMs. Another popular R-package that fit LMMs with flexible covariance structures is  `asreml` [@Butler2009], which wraps the proprietary software ASreml [@Gilmour2009] into the R framework. `asreml` with its core algorithm collectively has over 4,000 citations and remains popular, in particular for the analysis of plant breeding trials, due to the ease of fitting flexible covariance structures despite the license cost for its continued use. 
+
+While the symbolic formula of linear models generally have a consistent representation and evaluation rule as implemented in `stats::formula`, this is not the case for LMMs (and mixed models more generally). The inconsistency of symbolic formulae arises mainly in the representation of random effects, with the additional need to specify the variance-covariance structure of the random effects as well as structure of the associated model matrix that governs how the random effects are mapped to (groups of) the observational units. For example, `asreml::asreml` have separate formulation of fixed and random effects while `lme4::lmer` have a single formula that includes a mixture of fixed and random effects. Further differences with motivating examples are shown under The Plan. The differences give rise to confusion of equivalent model specification in different R-packages.  
+
+The lack of consistency in symbolic formula and model representation across mixed model software motivates the need to formulate a unified symbolic model formulae for LMMs with: (1) extension of the evaluation rules described in @Wilkinson1973; and (2) ease of comprehension of the specified model for the user. This symbolic model formulae can be a basis for creating a common API to mixed models with wrappers to popular mixed model R-packages (with initial focus on `lme4` and `asreml`), thereby achieving a similar feat to `parsnip` R-package [@Kuhn2018] which implements a tidy unified interface to many predictive modelling functions (e.g. random forest, logistic regression, survival models etc). 
+
+## The Plan
+
+
+### Overview
+We propose to implement a unified symbolic model formulae for LMMs with extended evaluation rules relevant to a plethora of different variance-covariance structures for the random effects, as based on continuous consultation and feedback from the community. Additionally, we propose to extend the `parsnip` R-package to implement a tidy unified interface to LMMs. The proposal will fill a growing demand in the current software market for a much needed (1) unified symbolic model formulae and its evaluation rules of LMMs with wrappers for popular R-packages, such as `lme4` and `asreml`, that fit LMMs; and (2) a markup language output of the mathematical notation of the specified model. 
+
+### Details
+
+The translation of mixed model specification in different R-packages is not straightforward where the main difference in the specification of the random effects.  In this section, we illustrate some key differences in the symbolic model formulae for `lme4` and `asreml` by considering two motivating examples as below. Note that there are range of models that can only be fitted in `asreml` or take great user effort to fit in `lme4`. Further examples will be progressively added here when the author has more time. 
+
+#### Example 1: Plant Breeding
+
+We consider a common experiment in plant breeding where $m$ crop varieties are tested at $t$ sites. We present the analysis of this multi-environmental trial as
+
+`yield ~ site + site:variety`
+
+where `site:variety` is modelled as a random effect [for reasons that we will not discuss in this proposal; interested readers are referred to @Robinson1991]. 
+Random effects, unlike standard linear models, require additional specification of its  variance-covariance structure. In the first instance, we assume that site-by-variety effect is Gaussian, independent and identically distributed (i.i.d.). This model is fitted as below in `lme4` and `asreml`. 
+
+
+Model 1 | i.i.d. $\text{var}($`site:variety`$)=\sigma^2_{sv}\mathbf{I}_{mt}$
+----- | -----  
+`lme4` | `lmer(yield ~ site + (1|site:variety))`
+`asreml` | `asreml(yield ~ site, random=~idv(site):id(variety))`
+
+where $\sigma^2_{sv}$ is the variance component that will be estimated from the data and $\mathbf{I}_{mt}$ is an $mt \times mt$ identity matrix. Here for `asreml`, `idv(site)` specifies the structure $\sigma^2_{sv}\mathbf{I}_{t}$, `id(site)` specifies the structure $\mathbf{I}_{m}$ and `idv(site):id(variety)` equates to $\sigma^2_{sv}\mathbf{I}_{t}\otimes \mathbf{I}_{m} = \sigma^2_{sv}\mathbf{I}_{mt}$. For `lme4`, `(1|site:variety)` specifies that we fit a random intercept for every site-by-variety effect with a common variance. 
+
+As the same crop variety are grown across multiple sites, it maybe more realistic to consider that the performance of the same variety will be correlated across sites. This in esssence results in the borrowing of strength across sites to achieve improved prediction in site-by-variety effect. In this instance we fit the model with the variance-covariance structure of site-by-variety effect as $\mathbf{\Sigma}_t\otimes\mathbf{I}_{m}$, where $\mathbf{\Sigma}_t$ is a $t\times t$ unstructured matrix.
+
+Model 2 | Borrowing strength across sites $\text{var}($`site:variety`$)=\mathbf{\Sigma}_t\otimes\mathbf{I}_{m}$
+----- | -----  
+`lme4` | `lmer(yield ~ site + (site - 1|variety))`
+`asreml` | `asreml(yield ~ site, random=~us(site):id(variety))`
+
+ Here the symbolic formulation in `asreml` is straight forward, however, `lme4` requires further explanation. For every level of the grouping factor specified after the `|` (`variety` here), `site - 1` fits a random (slope) effect for each site removing the overall intercept effect. These random slope effect will be correlated within each level of `variety`.  
+
+#### Example 2: Repeated Measures
+
+Consider an example where we have $m$ subjects, each of which we measure some quantitative response over $t$ regular time points. We fit the so-called random intercept and slope model 
+$$y_{ij} = \beta_0 + \beta_1x_j + b_{0i} + b_{1i}x_{j} + \epsilon_{ij},$$
+where $y_{ij}$ is the response of subject $i$ at the $j$-th time point; $\beta_0$ is the overall intercept; $\beta_1$ is the overall slope for time; $b_{0i}$ and $b_{1i}$ are the random intercept and the random time slope for subject $i$; and $x_{j}$ is the $j$-th time point (or a time-varying covariate e.g., age or weight); and $\epsilon_{ij}$ is the random error. In this model we assume that 
+$$\begin{bmatrix}b_{0i} \\b_{1i} \\ \epsilon_{ij}\end{bmatrix}\sim N\left(\begin{bmatrix}0 \\0\\0\end{bmatrix},\begin{bmatrix}\sigma^2_0 & \sigma_{01} & 0\\ \sigma_{01} & \sigma^2_1 & 0\\ 0 & 0 & \sigma^2 \end{bmatrix}\right).$$
+This is fitted as follows.
+
+Model 3 | Random intercept and slope model
+----- | -----  
+`lme4` | `lmer(response ~ 1 + (Time|Subject))`
+`asreml` | `asreml(response ~ 1, random=~str(Subject + Subject:Time, ~us(2):id(m))`
+
+
+
+## Acknowledgments {.appendix}
+
+This article is written using `radix`<sup>[@allaire2018]</sup> using [RStudio IDE](https://www.rstudio.com/) and statistical computing tool [R](https://www.r-project.org/)[@R2018]. 
+
+## Reuse {.appendix}
+
+Text are licensed under [Creative Commons Attribution CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Source code is available at https://github.com/emitanaka/r/_posts.
+
+
+## Corrections {.appendix}
+
+If you see mistakes or want to suggest changes, please create an [issue on the source repository](https://github.com/emitanaka/r/issues). 

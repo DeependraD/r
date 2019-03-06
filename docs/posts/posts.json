@@ -1,5 +1,20 @@
 [
   {
+    "path": "posts/2019-03-07-symbolic-formulae-for-linear-mixed-models/",
+    "title": "Symbolic formulae for linear mixed models",
+    "description": "The R Consortium Project",
+    "author": [
+      {
+        "name": "Emi Tanaka",
+        "url": "https://github.com/emitanaka"
+      }
+    ],
+    "date": "2019-03-07",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-03-07T10:57:28+11:00"
+  },
+  {
     "path": "posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/",
     "title": "The Gender Balance in Mathematical Sciences: A Case Study",
     "description": "Exploratory analysis of gender proportion in School of Mathematics and Statistics at The University of Sydney.",
@@ -12,7 +27,7 @@
     "date": "2019-01-20",
     "categories": [],
     "preview": "posts/2019-01-20-the-gender-balance-in-mathematical-sciences-a-case-study/radix-preview.png",
-    "last_modified": "2019-01-20T20:52:39+11:00",
+    "last_modified": "2019-03-07T10:38:15+11:00",
     "preview_width": 1248,
     "preview_height": 1920
   },

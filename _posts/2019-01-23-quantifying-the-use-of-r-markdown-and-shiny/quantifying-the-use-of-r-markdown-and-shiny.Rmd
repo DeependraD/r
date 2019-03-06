@@ -1,0 +1,48 @@
+---
+title: "Quantifying the use of R Markdown and Shiny"
+description: |
+  Are the use of R Markdown and Shiny increasing?
+author:
+  - name: Emi Tanaka
+    url: https://github.com/emitanaka
+    affiliation: School of Mathematics and Statistics, The University of Sydney
+date: 01-23-2019
+bibliography: biblio.bib  
+output:
+  radix::radix_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+    self_contained: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(scholar)
+library(patchwork)
+```
+
+```{r}
+id <- 'lkjqsd4AAAAJ' # Yihui Xie's google scholar id
+p <- get_publications(id)
+out <- data.frame(year=integer(), cites=integer(), pubid=character(), title=character())
+for(i in 1:6) {
+  atitle <- as.character(p$title[i])
+  apubid <- as.character(p$pubid[i])
+  ach <- get_article_cite_history(id, apubid)
+  ach$title <- atitle
+  out <- rbind(out, ach)
+}
+out <- out %>% 
+  mutate(year=factor(year))
+
+## Plot citation trend
+ggplot(out, aes(year, cites)) +
+  geom_segment(aes(xend = year, yend = 0), size=1, color='darkgrey') +
+  geom_point(size=3, color='firebrick') + 
+  facet_wrap(~title) + 
+  labs(x="Year", y="Citation") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), strip.text.x = element_text(size = 4))
+
+```
