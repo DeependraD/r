@@ -54,7 +54,7 @@ Model 1 | i.i.d. $\text{var}($`site:variety`$)=\sigma^2_{sv}\mathbf{I}_{mt}$
 `lme4` | `lmer(yield ~ site + (1|site:variety))`
 `asreml` | `asreml(yield ~ site, random=~idv(site):id(variety))`
 
-where $\sigma^2_{sv}$ is the variance component that will be estimated from the data and $\mathbf{I}_{mt}$ is an $mt \times mt$ identity matrix. Here for `asreml`, `idv(site)` specifies the structure $\sigma^2_{sv}\mathbf{I}_{t}$, `id(site)` specifies the structure $\mathbf{I}_{m}$ and `idv(site):id(variety)` equates to $\sigma^2_{sv}\mathbf{I}_{t}\otimes \mathbf{I}_{m} = \sigma^2_{sv}\mathbf{I}_{mt}$. For `lme4`, `(1|site:variety)` specifies that we fit a random intercept for every site-by-variety effect with a common variance. 
+where $\sigma^2_{sv}$ is the variance component that will be estimated from the data and $\mathbf{I}_{mt}$ is an $mt \times mt$ identity matrix. Here for `asreml`, `idv(site)` specifies the structure $\sigma^2_{sv}\mathbf{I}_{t}$, `id(variety)` specifies the structure $\mathbf{I}_{m}$ and `idv(site):id(variety)` equates to $\sigma^2_{sv}\mathbf{I}_{t}\otimes \mathbf{I}_{m} = \sigma^2_{sv}\mathbf{I}_{mt}$. For `lme4`, `(1|site:variety)` specifies that we fit a random intercept for every site-by-variety effect with a common variance. 
 
 As the same crop variety are grown across multiple sites, it maybe more realistic to consider that the performance of the same variety will be correlated across sites. This in esssence results in the borrowing of strength across sites to achieve improved prediction in site-by-variety effect. In this instance we fit the model with the variance-covariance structure of site-by-variety effect as $\mathbf{\Sigma}_t\otimes\mathbf{I}_{m}$, where $\mathbf{\Sigma}_t$ is a $t\times t$ unstructured matrix.
 
